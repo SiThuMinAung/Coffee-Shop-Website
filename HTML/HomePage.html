@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../CSS/Style.css">
+  <!-- To Add Icons -->
+  <script src="https://kit.fontawesome.com/50b57e1313.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="HomePage.html"><img src="../images/CoffeePics/BeanLogov3(white).png" alt="Logo"></a>
+      <ul class="links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li class="dropDown">
+          <a href="CoffeeSelection.html" class="dropBtn">Menu<i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropDown-content">
+            <a href="CoffeeSelection.html">Coffee</a>
+            <a href="CoffeeSelection.html">Tea</a>
+            <a href="CoffeeSelection.html">Bread & Cake</a>
+          </div>
+        </li>
+        <li class="dropDown">
+          <a href="BrewingEqm.html">Brewing Equipments<i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropDown-content">
+            <a href="BrewingEqm.html">Auto</a>
+            <a href="BrewingEqm.html">Manual</a>
+            <a href="BrewingEqm.html">Hybrid</a>
+          </div>
+        </li>
+        <li><a href="Events.html">Event & Workshop</a></li>
+        <li><a href="SpecialOffers.html">Special Offers</a></li>
+        <li><a href="Cusreview.html">Customers' Reviews</a></li>
+        <li>
+          <div class="search-container">
+            <form action="/HTML/CoffeeSelection.html">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="cartIcon">
+        <i class="fa-solid fa-cart-shopping"><span id="js-order-count">0</span></i>
+      </div>
+    </nav>
+
+    <!-- For Shopping Cart Preview -->
+    <div class="cartPreview">
+      <div class="cart-preview">
+        <h2>Cart Preview</h2>
+        <div id="cart-content"></div>
+        <br>
+        <div class="button">
+          <a href="ShoppingCart.html">
+            Payment
+          </a>
+          <button class="close">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown-menu">
+      <ul class="links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li class="dropDown">
+          <a href="CoffeeSelection.html" class="dropBtn">Menu</a>
+          <div class="dropDown-content">
+            <a href="CoffeeSelection.html">Coffee</a>
+            <a href="CoffeeSelection.html">Tea</a>
+            <a href="CoffeeSelection.html">Bread & Cake</a>
+          </div>
+        </li>
+        <li class="dropDown">
+          <a href="BrewingEqm.html">Brewing Equipments</a>
+          <div class="dropDown-content">
+            <a href="BrewingEqm.html">Auto</a>
+            <a href="BrewingEqm.html">Manual</a>
+            <a href="BrewingEqm.html">Hybrid</a>
+          </div>
+        </li>
+        <li><a href="Events.html">Event & Workshop</a></li>
+        <li><a href="SpecialOffers.html">Special Offers</a></li>
+        <li><a href="Cusreview.html">Customers' Reviews</a></li>
+        <li>
+          <div class="search-container">
+            <form action="/HTML/CoffeeSelection.html">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <img src="../images/CoffeePics/BeanLogov3(white).png" alt="Logo">
+      <h1>The Bean Boutique</h1>
+    </div>
+  </header>
+
+  <!-- For Slider Bar -->
+  <div class="sliderContainer">
+    <div class="sliderContent">50% Discount for the first time customers</div>
+  </div>
+
+  <div id="popupBox" class="popupBox">
+    <div class="popupBox-content">
+      <span class="popup-close" onclick="closeModal()">close</span>
+      <h2>🎉 50% OFF for First-Time Customers! 🎉</h2>
+      <p>Shop now and enjoy an **exclusive half-price deal** on your first purchase.</p>
+      <a href="CoffeeSelection.html" class="close-btn" onclick="closeModal()">Claim Your Discount</a>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="content">
+      <h1>Chance to Discover the Real Taste of Coffee</h1>
+      <h2>We sell not only the coffee but also the emotion</h2>
+      <a href="CoffeeSelection.html">Order Now</a>
+    </div>
+    <div class="image">
+      <img class="img3" src="../images/CoffeePics/Beans3.png" alt="Image">
+    </div>
+  </div>
+  
+  <div class="welcome">
+    <p></p>
+  </div>
+  
+  <div class="bestSeller">
+    <div class="bestSellerContainer">
+      <h2>Our Highest Rated Brews</h2>
+      <div class="bestSellerImagesContainer">
+        <div class="bestSellerBox">
+          <img src="../images/CoffeePics/Cappucino.png" alt="Image">
+          <div class="content">
+            <p>Cappucino</p>
+            <a href="CoffeeSelection.html">Order Now</a>
+          </div>
+        </div>
+        <div class="bestSellerBox">
+          <img src="../images/CoffeePics/Espressso.png" alt="Image">
+          <div class="content">
+            <p>Espressso</p>
+            <a href="CoffeeSelection.html">Order Now</a>
+          </div>
+        </div>
+        <div class="bestSellerBox">
+          <img src="../images/CoffeePics/MilkTea.png" alt="Image">
+          <div class="content">
+            <p>Milk Tea</p>
+            <a href="CoffeeSelection.html">Order Now</a>
+          </div>
+        </div>
+        <div class="bestSellerBox">
+          <img src="../images/CoffeePics/Latte'-01.png" alt="Image">
+          <div class="content">
+            <p>Latte'</p>
+            <a href="CoffeeSelection.html">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bestSellerContainer">
+      <h2>Our Best Seller Machines</h2>
+      <div class="bestSellerImagesContainer">
+        <div class="bestSellerBox">
+          <img src="../images/BrewingEquipments/DripCoffeeMaker.png" alt="Image">
+          <div class="content">
+            <p>Drip Coffee Maker</p>
+            <a href="BrewingEqm.html">Order Now</a>
+          </div>
+        </div>
+        <div class="bestSellerBox">
+          <img src="../images/BrewingEquipments/FrenchPress.png" alt="Image">
+          <div class="content">
+            <p>French Press</p>
+            <a href="BrewingEqm.html">Order Now</a>
+          </div>
+        </div>
+        <div class="bestSellerBox">
+          <img src="../images/BrewingEquipments/Siphon.png" alt="Image">
+          <div class="content">
+            <p>Siphon</p>
+            <a href="BrewingEqm.html">Order Now</a>
+          </div>
+        </div>
+        <div class="bestSellerBox">
+          <img src="../images/BrewingEquipments/ColdBrewMaker.png" alt="Image">
+          <div class="content">
+            <p>Cold Brew Maker</p>
+            <a href="BrewingEqm.html">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="welcome">
+    <p></p>
+  </div>
+
+  <div class="joinEventContainer">
+    <div class="joinEvent">
+      <img src="../images/Illustration/coffeetasteillustration.jpg" alt="Image">
+      <div class="joinEventContent">
+        <h2>Join our coffee tasting event</h2>
+        <p>You can earn rewards & coupon</p>
+      </div>
+      <a href="Events.html">More Info<i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="joinEvent">
+      <img src="../images/Illustration/breweventsillustration.jpg" alt="Image">
+      <div class="joinEventContent">
+        <h2>Join Our Brewing Class</h2>
+        <p>How to brew a good Coffee</p>
+      </div>
+      <a href="Events.html">More Info<i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="welcome">
+    <p></p>
+  </div>
+
+  <div class="location-contact">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.7626106257585!2d96.13866589536315!3d16.803763563871065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb44170adf1b%3A0x4be1f7384cc20c2b!2sDagon%20Center%202!5e0!3m2!1sen!2smm!4v1740794964232!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contactUs">
+      <div class="mainLocation">
+        <h3>Location</h3>
+          <address>Dagon Center 2 <br>
+            268 Pyay Rd, Yangon 11111</address>
+        <h3>Phone</h3>
+          <p>09-777888999</p>
+          <p>09-888999555</p>
+        <h3>Email</h3>
+          <p>beanboutique@gmail.com</p>
+        <h3>Hours</h3>
+          <p>8AM - 9PM</p>
+      </div>
+      <div class="contactUsForm">
+        <h2>Feedback Form</h2>
+        <input type="text" placeholder="Enter Username" required>
+        <input type="email" placeholder="Enter Email" required>
+        <input type="text" placeholder="Enter your Feedbacks">
+        <button onclick="
+        alert ('Thank you for your Feedbacks');">Submit</button>
+      </div>
+    </div>
+
+    <div class="contactUsResponsive">
+      <div class="mainLocationResponsive">
+        <h3>Location</h3>
+          <address>Dagon Center 2 <br>
+            268 Pyay Rd, Yangon 11111</address>
+        <h3>Phone</h3>
+          <p>09-777888999</p>
+          <p>09-888999555</p>
+        <h3>Email</h3>
+          <p>beanboutique@gmail.com</p>
+        <h3>Hours</h3>
+          <p>8AM - 9PM</p>
+      </div>
+      <div class="contactUsFormResponsive">
+        <h2>Feedback Form</h2>
+        <input type="text" placeholder="Enter Username" required>
+        <input type="email" placeholder="Enter Email" required>
+        <input type="text" placeholder="Enter your Feedbacks">
+        <button onclick="
+        alert ('Thank you for your Feedbacks');">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-top-button">
+    <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+
+  <footer>
+    <div class="footerText">
+      <p>Follow Us On</p>
+      <ul class="socialIcons">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-table">
+      <div class="footer-table-item">
+        <h2>Privacy & Policy</h2>
+        <p>We never sell or share your information</p>
+        <p>We may use cookies to improve your browsing experience</p>
+        <p>You can unsubscribe or request your data be removed anytime by contacting us</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>Help</h2>
+        <p>09-777888999</p>
+        <p>09-888999777</p>
+        <p>beanboutique@gmail.com</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>Services</h2>
+        <p>Events</p>
+        <p>Workshops</p>
+        <p>Best Services</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>About Us</h2>
+        <p>Best Brews</p>
+        <p>Best Equipments</p>
+        <p>Best Bristas</p>
+      </div>
+    </div>
+
+    <div class="copyRight">
+      <p>© Copyright 2025, Bean Boutique. All right reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../JavaScript/Scripts.js"></script>
+</body>
+</html>

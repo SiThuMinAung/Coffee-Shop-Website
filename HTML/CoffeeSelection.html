@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+  <!-- To Add Icons -->
+  <script src="https://kit.fontawesome.com/50b57e1313.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="HomePage.html"><img src="../images/CoffeePics/BeanLogov3(white).png" alt="Logo"></a>
+      <ul class="links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li class="dropDown">
+          <a href="CoffeeSelection.html" class="dropBtn">Menu<i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropDown-content">
+            <a href="CoffeeSelection.html">Coffee</a>
+            <a href="CoffeeSelection.html">Tea</a>
+            <a href="CoffeeSelection.html">Bread & Cake</a>
+          </div>
+        </li>
+        <li class="dropDown">
+          <a href="BrewingEqm.html">Brewing Equipments<i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropDown-content">
+            <a href="BrewingEqm.html">Auto</a>
+            <a href="BrewingEqm.html">Manual</a>
+            <a href="BrewingEqm.html">Hybrid</a>
+          </div>
+        </li>
+        <li><a href="Events.html">Event & Workshop</a></li>
+        <li><a href="SpecialOffers.html">Special Offers</a></li>
+        <li><a href="Cusreview.html">Customers' Reviews</a></li>
+        <li>
+          <div class="search-container">
+            <form action="/HTML/CoffeeSelection.html">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="cartIcon">
+        <i class="fa-solid fa-cart-shopping"><span id="js-order-count">0</span></i>
+      </div>
+    </nav>
+
+    <!-- For Shopping Cart Preview -->
+    <div class="cartPreview">
+      <div class="cart-preview">
+        <h2>Cart Preview</h2>
+        <div id="cart-content"></div>
+        <br>
+        <div class="button">
+          <a href="ShoppingCart.html">
+            Payment
+          </a>
+          <button class="close">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown-menu">
+      <ul class="links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li class="dropDown">
+          <a href="CoffeeSelection.html" class="dropBtn">Menu</a>
+          <div class="dropDown-content">
+            <a href="CoffeeSelection.html">Coffee</a>
+            <a href="CoffeeSelection.html">Tea</a>
+            <a href="CoffeeSelection.html">Bread & Cake</a>
+          </div>
+        </li>
+        <li class="dropDown">
+          <a href="BrewingEqm.html">Brewing Equipments</a>
+          <div class="dropDown-content">
+            <a href="BrewingEqm.html">Auto</a>
+            <a href="BrewingEqm.html">Manual</a>
+            <a href="BrewingEqm.html">Hybrid</a>
+          </div>
+        </li>
+        <li><a href="Events.html">Event & Workshop</a></li>
+        <li><a href="SpecialOffers.html">Special Offers</a></li>
+        <li><a href="Cusreview.html">Customers' Reviews</a></li>
+        <li>
+          <div class="search-container">
+            <form action="/HTML/CoffeeSelection.html">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <img src="../images/CoffeePics/BeanLogov3(white).png" alt="Logo">
+      <h1>The Bean Boutique</h1>
+    </div>
+  </header>
+  
+  <!-- title -->
+  <div class="menuTextContainer">
+    <h1>Bean Boutique's Menu</h1>
+  </div>
+
+  <div class="welcome">
+    <p></p>
+  </div>
+
+  <section id="menu">
+    <h2>Coffee</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="../images/CoffeePics/Espressso.png" alt="Image">
+        <h3>Espresso</h3>
+        <p>A rich, bold, and strong coffee brewed by forcing hot water under pressure through finely-ground coffee beans.</p>
+        <p class="price">$2.50</p>
+        <button onclick="addToCart('Espresso', 3.50)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../images/CoffeePics/Latte'-01.png" alt="Image">
+        <h3>Latte</h3>
+        <p>A smooth coffee made with espresso and steamed milk, topped with a light layer of foam.</p>
+        <p class="price">$3.50</p>
+        <button onclick="addToCart('Latte', 3.50)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../images/CoffeePics/Cappucino.png" alt="Image">
+        <h3>Cappuccino</h3>
+        <p>A coffee drink that combines espresso, steamed milk, and foam to create a creamy and balanced flavor.</p>
+        <p class="price">$3.00</p>
+        <button onclick="addToCart('Cappuccino', 3.00)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../images/CoffeePics/Americano.png" alt="Image">
+        <h3>Americano</h3>
+        <p>A simple coffee made by diluting espresso with hot water for a smooth and mild taste.</p>
+        <p class="price">$2.75</p>
+        <button onclick="addToCart('Americano', 2.75)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../images/CoffeePics/Mocha.png" alt="Image">
+        <h3>Mocha</h3>
+        <p>A delicious combination of espresso, chocolate syrup, and steamed milk, topped with whipped cream.</p>
+        <p class="price">$4.00</p>
+        <button onclick="addToCart('Mocha', 4.00)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../images/CoffeePics/FlatWhite.png" alt="Image">
+        <h3>Flat White</h3>
+        <p>A strong coffee with velvety steamed milk, providing a smooth and rich taste without too much foam.</p>
+        <p class="price">$3.25</p>
+        <button onclick="addToCart('Flat White', 3.25)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../images/CoffeePics/IcedCoffee.png" alt="Image">
+        <h3>Iced Coffee</h3>
+        <p>Freshly brewed coffee chilled and served over ice, perfect for a refreshing boost.</p>
+        <p class="price">$2.75</p>
+        <button onclick="addToCart('Iced Coffee', 2.75)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="../images/CoffeePics/BlackCoffee.png" alt="Image">
+        <h3>Black Coffee</h3>
+        <p>A unique dessert-style coffee made with a scoop of vanilla ice cream and a shot of hot espresso poured over it.</p>
+        <p class="price">$4.50</p>
+        <button onclick="addToCart('Affogato', 4.50)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Tea</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="../images/CoffeePics/MilkTea.png" alt="Image">
+        <h3>Milk Tea</h3>
+        <p>A popular beverage that combines tea with milk or a milk substitute, creating a creamy and flavorful drink.</p>
+        <p class="price">$3.50</p>
+        <button onclick="addToCart('Milk Tea', 3.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="../images/CoffeePics/GreenTea.png" alt="Image">
+        <h3>Green Tea</h3>
+        <p>Green tea is a type of tea made from the leaves of the Camellia sinensis plant. Good for your health and daily life.</p>
+        <p class="price">$4.00</p>
+        <button onclick="addToCart('Green Tea', 4.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="../images/CoffeePics/BrownSugarMilkTea.png" alt="Image">
+        <h3>Brown Sugar Milk Tea</h3>
+        <p>A Milk tea using brown sugar instead.</p>
+        <p class="price">$3.50</p>
+        <button onclick="addToCart('Brown Sugar Milk Tea', 3.50)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="../images/CoffeePics/Tea.png" alt="Image">
+        <h3>Tea</h3>
+        <p> It is one of the most popular drinks worldwide and comes in many varieties, depending on how the leaves are processed.</p>
+        <p class="price">$3.00</p>
+        <button onclick="addToCart('Tea', 3.00)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Others</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="../images/CoffeePics/BreadRolls.png" alt="Image">
+        <h3>Bread Rolls</h3>
+        <p class="price">$5.00</p>
+        <button onclick="addToCart('Bread Rolls', 5.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="../images/CoffeePics/Burger.png" alt="Image">
+        <h3>Burger</h3>
+        <p class="price">$6.00</p>
+        <button onclick="addToCart('Burger', 6.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="../images/CoffeePics/ChocolateCake.png" alt="Image">
+        <h3>Chocolate Cake</h3>
+        <p class="price">$4.00</p>
+        <button onclick="addToCart('Chocolate Cake', 4.00)">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="../images/CoffeePics/FrenchBread.png" alt="Image">
+        <h3>French Bread</h3>
+        <p class="price">$4.50</p>
+        <button onclick="addToCart('French Bread', 4.50)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="scroll-top-button">
+    <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+
+  <footer>
+    <div class="footerText">
+      <p>Follow Us On</p>
+      <ul class="socialIcons">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-table">
+      <div class="footer-table-item">
+        <h2>Privacy & Policy</h2>
+        <p>We never sell or share your information</p>
+        <p>We may use cookies to improve your browsing experience</p>
+        <p>You can unsubscribe or request your data be removed anytime by contacting us</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>Help</h2>
+        <p>09-777888999</p>
+        <p>09-888999777</p>
+        <p>beanboutique@gmail.com</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>Services</h2>
+        <p>Events</p>
+        <p>Workshops</p>
+        <p>Best Services</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>About Us</h2>
+        <p>Best Brews</p>
+        <p>Best Equipments</p>
+        <p>Best Bristas</p>
+      </div>
+    </div>
+
+    <div class="copyRight">
+      <p>© Copyright 2025, Bean Boutique. All right reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../JavaScript/Scripts.js"></script>
+</body>
+</html>
