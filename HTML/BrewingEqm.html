@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewing Equipments</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+  <!-- To Add Icons -->
+  <script src="https://kit.fontawesome.com/50b57e1313.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="HomePage.html"><img src="../images/CoffeePics/BeanLogov3(white).png" alt="Logo"></a>
+      <ul class="links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li class="dropDown">
+          <a href="CoffeeSelection.html" class="dropBtn">Menu<i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropDown-content">
+            <a href="CoffeeSelection.html">Coffee</a>
+            <a href="CoffeeSelection.html">Tea</a>
+            <a href="CoffeeSelection.html">Bread & Cake</a>
+          </div>
+        </li>
+        <li class="dropDown">
+          <a href="BrewingEqm.html">Brewing Equipments<i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropDown-content">
+            <a href="BrewingEqm.html">Auto</a>
+            <a href="BrewingEqm.html">Manual</a>
+            <a href="BrewingEqm.html">Hybrid</a>
+          </div>
+        </li>
+        <li><a href="Events.html">Event & Workshop</a></li>
+        <li><a href="SpecialOffers.html">Special Offers</a></li>
+        <li><a href="Cusreview.html">Customers' Reviews</a></li>
+        <li>
+          <div class="search-container">
+            <form action="/HTML/CoffeeSelection.html">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="cartIcon">
+        <i class="fa-solid fa-cart-shopping"><span id="js-order-count">0</span></i>
+      </div>
+    </nav>
+
+    <!-- For Shopping Cart Preview -->
+    <div class="cartPreview">
+      <div class="cart-preview">
+        <h2>Cart Preview</h2>
+        <div id="cart-content"></div>
+        <br>
+        <div class="button">
+          <a href="ShoppingCart.html">
+            Payment
+          </a>
+          <button class="close">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown-menu">
+      <ul class="links">
+        <li><a href="HomePage.html">Home</a></li>
+        <li class="dropDown">
+          <a href="CoffeeSelection.html" class="dropBtn">Menu</a>
+          <div class="dropDown-content">
+            <a href="CoffeeSelection.html">Coffee</a>
+            <a href="CoffeeSelection.html">Tea</a>
+            <a href="CoffeeSelection.html">Bread & Cake</a>
+          </div>
+        </li>
+        <li class="dropDown">
+          <a href="BrewingEqm.html">Brewing Equipments</a>
+          <div class="dropDown-content">
+            <a href="BrewingEqm.html">Auto</a>
+            <a href="BrewingEqm.html">Manual</a>
+            <a href="BrewingEqm.html">Hybrid</a>
+          </div>
+        </li>
+        <li><a href="Events.html">Event & Workshop</a></li>
+        <li><a href="SpecialOffers.html">Special Offers</a></li>
+        <li><a href="Cusreview.html">Customers' Reviews</a></li>
+        <li>
+          <div class="search-container">
+            <form action="/HTML/CoffeeSelection.html">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <img src="../images/CoffeePics/BeanLogov3(white).png" alt="Logo">
+      <h1>The Bean Boutique</h1>
+    </div>
+  </header>
+
+  <!-- header -->
+  <div class="menuTextContainer">
+    <h1>Brewing Equipments & Accessories</h1>
+  </div>
+  <div class="welcome">
+    <p></p>
+  </div>
+
+  <div class="eqmContainer">
+    <h2>AUTO MACHINES</h2>
+    <div class="auto">
+      <div class="item2">
+        <img src="../images/BrewingEquipments/DripCoffeeMaker.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Drip Coffee Maker <br><span>89.99$</span></p>
+          <button onclick="
+          addToCart('Drip Coffee Maker', 89.99)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="eqmExplain">
+            A drip coffee maker is an electric appliance designed to brew coffee by dripping hot water over ground coffee beans placed in a filter.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/EspressooMaker.png" alt="Image">
+        <div class="eqmDetails">
+            <p>Espresso Maker <br><span>150.99$</span></p>
+            <button onclick="
+              addToCart('Espresso Maker', 150.99)">Add to cart</button>
+            <div class="starRating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          <div class="eqmExplain">
+            Espresso machines force hot water through finely-ground coffee to create a concentrated coffee. Some espresso machines also have a steam wand to froth milk for drinks like cappuccinos.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/SingleServeMaker.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Single Server Maker <br><span>100$</span></p>
+          <button onclick="
+            addToCart('Single Server Maker', 100.00)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="eqmExplain">
+            Single-serve coffee makers brew coffee from pods or grounds in a single serving. They offer a variety of coffee options, and are easy to use. However, they can have a negative environmental impact due to their use of plastic.
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>MANUAL MACHINES</h2>
+    <div class="manual">
+      <div class="item2">
+        <img src="../images/BrewingEquipments/Pour-overDripper.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Pour-over Dripper <br><span>110.99$</span></p>
+          <button onclick="
+            addToCart('Pour-over Dripper', 110.99)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="eqmExplain">
+            A "pour over dripper" is a specialized coffee brewing device used in the "pour over" method, where hot water is manually poured over coffee grounds placed in a filter within the dripper, allowing the brewed coffee to drip slowly into a cup.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/FrenchPress.png" alt="Image">
+        <div class="eqmDetails">
+          <p>French Press <br><span>120$</span></p>
+          <button onclick="
+            addToCart('French Press', 120.00)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="eqmExplain">
+            The French Press is a cylindrical pot with a plunger and built-in filter screen that presses hot water through ground coffee: that's the simple beauty of the French press, creating an earthy, rich taste in your daily cup of coffee.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/MokaPot.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Moka Pot <br><span>130$</span></p>
+          <button onclick="
+            addToCart('Moka Pot', 130.00)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="eqmExplain">
+            A moka pot is a stovetop coffee maker that uses steam pressure to brew coffee. It's a staple of Italian coffee culture and is also popular in Latin America and Australia.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/Aeropress.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Aeropress <br><span>100$</span></p>
+          <button onclick="
+            addToCart('Aeropress', 100.00)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="eqmExplain">
+            The AeroPress is a manual coffee maker that brews coffee by forcing water and coffee grounds through a filter. It's lightweight and portable, making it a good choice for traveling.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/ColdBrewMaker.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Cold Brew Maker <br><span>110$</span></p>
+          <button onclick="
+            addToCart('Cold Brew Maker', 110.00)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="eqmExplain">
+            A cold brew coffee maker steeps coffee grounds in water for an extended period of time to create a concentrate that can be diluted with milk or water.
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>HYBRID MACHINES</h2>
+    <div class="hybrid">
+      <div class="item2">
+        <img src="../images/BrewingEquipments/Siphon.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Siphon <br><span>100$</span></p>
+          <button onclick="
+            addToCart('Siphon', 100.00)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="eqmExplain">
+            A siphon coffee maker, also known as a vacuum coffee maker, is a brewing device that uses heat, gravity, and vacuum pressure to create coffee.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/Percolator.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Percolator <br><span>95.50$$</span></p>
+          <button onclick="
+            addToCart('Percolator', 95.50)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="eqmExplain">
+            A coffee percolator is a pot that brews coffee by repeatedly cycling boiling water through coffee grounds. The grounds are held in a metal basket.
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <img src="../images/BrewingEquipments/TurkishCoffeePot.png" alt="Image">
+        <div class="eqmDetails">
+          <p>Turkish Coffee Pot <br><span>30$</span></p>
+          <button onclick="
+            addToCart('Turkish Coffee Pot', 30.00)">Add to cart</button>
+          <div class="starRating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="eqmExplain">
+            A cezve consists of a small pot, a long handle and a pouring lip appositely designed to brew delightful Turkish coffee.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="welcome">
+    <p></p>
+  </div>
+  
+  <div class="learn">
+    <h2>Do you want to learn how to use these equipments?</h2>
+    <p><a href="Events.html">Join Our Brewing Events</a></p>
+  </div>
+
+  <div class="scroll-top-button">
+    <button id="scrollTopBtn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+
+  <footer>
+    <div class="footerText">
+      <p>Follow Us On</p>
+      <ul class="socialIcons">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-table">
+      <div class="footer-table-item">
+        <h2>Privacy & Policy</h2>
+        <p>We never sell or share your information</p>
+        <p>We may use cookies to improve your browsing experience</p>
+        <p>You can unsubscribe or request your data be removed anytime by contacting us</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>Help</h2>
+        <p>09-777888999</p>
+        <p>09-888999777</p>
+        <p>beanboutique@gmail.com</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>Services</h2>
+        <p>Events</p>
+        <p>Workshops</p>
+        <p>Best Services</p>
+      </div>
+      <div class="footer-table-item">
+        <h2>About Us</h2>
+        <p>Best Brews</p>
+        <p>Best Equipments</p>
+        <p>Best Bristas</p>
+      </div>
+    </div>
+
+    <div class="copyRight">
+      <p>© Copyright 2025, Bean Boutique. All right reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../JavaScript/Scripts.js"></script>
+</body>
+</html>
